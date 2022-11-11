@@ -4,7 +4,7 @@ import Snowfall from "react-snowfall";
 
 function App() {
     return (
-        <div>
+        <main>
             <Snowfall />
             <div className="text-white text-center h-screen flex justify-center items-center flex-col bg-dark">
                 {" "}
@@ -17,7 +17,7 @@ function App() {
                     />
                 </p>
             </div>
-        </div>
+        </main>
     );
 }
 

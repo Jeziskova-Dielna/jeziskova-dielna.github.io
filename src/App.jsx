@@ -13,7 +13,7 @@ function App() {
                 </h1>
                 <p className="text-5xl font-extralight cursor-default select-none">
                     <Countdown
-                        date={Date.parse("20 Nov 2022 00:00:00 GMT+1")}
+                        date={Date.parse("20 Nov 2022 19:00:00 GMT+1")}
                     />
                 </p>
             </div>

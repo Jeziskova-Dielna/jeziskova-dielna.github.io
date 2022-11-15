@@ -13,7 +13,7 @@ function App() {
                     target="_blank"
                 >
                     {" "}
-                    <h1 className="font-black text-6xl my-6 pointer-events-none cursor-default select-none mb-12">
+                    <h1 className="font-black text-6xl my-6 pointer-events-none cursor-pointer select-none mb-12">
                         Ježiškova Dielňa
                     </h1>
                 </a>

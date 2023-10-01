@@ -4,7 +4,7 @@ import Snowfall from "react-snowfall";
 
 function App() {
     return (
-        <main className="px-4  bg-gradient-to-r  from-dark to-black">
+        <main className="px-4  bg-gradient-to-r  from-dark to-black select-none">
             <Snowfall />
             <div className="text-white text-center h-screen flex justify-center items-center flex-col">
                 {" "}
@@ -19,8 +19,7 @@ function App() {
                 </a>
                 <span className="mb-8 text-xl font-light max-w-3xl font-[Berkshire_Swash, cursive']">
                     U nás na Ježiškovej dielni každoročne počas Vianoc
-                    organizujeme rôzne súťaže, komunitné podujatia a ďalšie
-                    akcie!
+                    organizujeme rôzne súťaže, komunitné eventy a viac!
                 </span>
                 <a
                     href="https://bit.ly/jeziskova-dielna"

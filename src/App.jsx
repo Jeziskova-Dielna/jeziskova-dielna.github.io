@@ -23,7 +23,7 @@ function App() {
                     akcie!
                 </span>
                 <a
-                    href=""
+                    href="https://bit.ly/jeziskova-dielna"
                     className="z-50 bg-white/90 hover:bg-white transition-all px-12 py-3 rounded-xl text-black text-xl"
                 >
                     Pripoj sa!

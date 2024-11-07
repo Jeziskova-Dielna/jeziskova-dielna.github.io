@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* General styling */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* Slider styling */
+.slider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 180px; /* Adjust slider height as needed */
+    display: flex;
+    align-items: center;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Smoother and slower scroll */
+    width: calc(250px * 12); /* Adjust to accommodate images */
+}
+
+.slide {
+    width: 220px;
+    height: auto;
+    margin: 0 15px;
+    object-fit: cover;
+    border-radius: 48px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transform and opacity transition on hover */
+    opacity: 0.4; /* Set lower opacity by default */
+}
+
+.slide:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    opacity: 1; /* Increase opacity on hover */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(
+            calc(-250px * 6)
+        ); /* Half of track width for looping */
+    }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .slider {
+        height: 250px;
+    }
+    .slide {
+        width: 280px;
+    }
+}
+
+/* Background and text styling */
+.bg-gradient-to-r {
+    background: linear-gradient(
+        to right,
+        #1e3a8a,
+        #000000
+    ); /* Darker gradient */
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add depth with shadow */
+}
+
+p {
+    color: rgba(255, 255, 255, 0.2); /* Transparent countdown */
+    font-size: clamp(5vw, 10vw, 15vw); /* Responsive text size */
+}
+
+.pointer-events-auto {
+    pointer-events: auto;
+}

@@ -56,7 +56,7 @@ function App() {
                 </a>
                 <p className="text-[15vw] text-white/20 font-extrabold absolute top-1/3 transform -translate-y-1/2 w-full flex justify-center drop-shadow-lg">
                     <Countdown
-                        date={Date.parse("25 Nov 2024 19:00:00 GMT+1")}
+                        date={Date.parse("24 Nov 2024 19:00:00 GMT+1")}
                     />
                 </p>
             </div>
